@@ -2,29 +2,34 @@ import StoryCard from "./StoryCard";
 
 const stories = [
   {
-    name: "Sonny Sangha",
-    src: "/images/users/sonny_sangha.jpg",
-    profile: "/images/avatars/sonny.jpg",
+    name: "Emmy Rena",
+    src: "https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083390__340.jpg",
+    profile:
+      "https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083390__340.jpg",
   },
   {
     name: "Elon Musk",
-    src: "/images/users/elon_musk.jpg",
-    profile: "/images/avatars/elon_musk.jpg",
+    src: "https://cdn.pixabay.com/photo/2021/03/09/23/49/elon-6083103__340.jpg",
+    profile:
+      "https://cdn.pixabay.com/photo/2021/03/09/23/49/elon-6083103__340.jpg",
   },
   {
-    name: "Jeff Bezos",
-    src: "/images/users/jeff-bezos-richest-man-2018.jpg",
-    profile: "/images/avatars/jeff-bezos.jpg",
+    name: "Alice Jerome",
+    src: "https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761__340.jpg",
+    profile:
+      "https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761__340.jpg",
   },
   {
-    name: "Mark Zuckerberg",
-    src: "/images/users/mark_zuckerberg.jpg",
-    profile: "/images/avatars/mark_zuckerberg.jpg",
+    name: "John Mena",
+    src: "https://cdn.pixabay.com/photo/2017/11/06/13/45/cap-2923682__340.jpg",
+    profile:
+      "https://cdn.pixabay.com/photo/2017/11/06/13/45/cap-2923682__340.jpg",
   },
   {
-    name: "Bill Gates",
-    src: "/images/users/bill_gate.jpg",
-    profile: "/images/avatars/bill_gate.jpg",
+    name: "Hellena Vashnaze",
+    src: "https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083401__340.jpg",
+    profile:
+      "https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083401__340.jpg",
   },
 ];
 
@@ -33,7 +38,7 @@ function Stories() {
     <div className="flex justify-center space-x-3 mx-auto">
       {stories.map((story) => (
         <StoryCard
-          key={story.id}
+          key={story.src}
           name={story.name}
           src={story.src}
           profile={story.profile}

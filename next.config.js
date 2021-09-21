@@ -7,6 +7,7 @@ module.exports = {
       "firebasestorage.googleapis.com",
       "avatars.githubusercontent.com",
       "lh3.googleusercontent.com",
+      "cdn.pixabay.com",
     ],
   },
 };
