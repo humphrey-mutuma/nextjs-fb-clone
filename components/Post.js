@@ -11,7 +11,7 @@ function Post({ name, message, email, postImage, image, timestamp }) {
             src={image}
             width={40}
             height={40}
-            alt=""
+            alt=" "
           />
           <div>
             <p className="font-medium">{name}</p>
@@ -29,12 +29,12 @@ function Post({ name, message, email, postImage, image, timestamp }) {
       </div>
       {postImage && (
         <div className="relative h-56 md:h-96 bg-white">
-          <Image src={postImage} objectFit="cover" layout="fill" />
+          <Image alt="" src={postImage} objectFit="cover" layout="fill" />
         </div>
       )}
 
       {/* Footer of post */}
-      <div
+      <footer
         className="flex justify-between items-center rounded-b-2xl bg-white
             shadow-md text-gray-400 border-t"
       >
@@ -50,7 +50,7 @@ function Post({ name, message, email, postImage, image, timestamp }) {
           <ShareIcon className="h-4" />
           <p className="text-xs sm:text-base">Share</p>
         </div>
-      </div>
+      </footer>
     </div>
   );
 }
