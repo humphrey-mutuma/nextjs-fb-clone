@@ -14,9 +14,9 @@ const contacts = [
     profile: "https://links.papareact.com/kxk",
   },
   {
-    name: "Jeff Bezos",
-    src: "https://links.papareact.com/f0p",
-    profile: "https://links.papareact.com/fop",
+    name: "The Queen",
+    src: "https://links.papareact.com/6gg",
+    profile: "https://links.papareact.com/6gg",
   },
   {
     name: "Mark Zuckerberg",
@@ -27,6 +27,11 @@ const contacts = [
     name: "Bill Gates",
     src: "https://links.papareact.com/zvy",
     profile: "https://links.papareact.com/zvy",
+  },
+  {
+    name: "Queen ",
+    src: "https://links.papareact.com/6gg",
+    profile: "https://links.papareact.com/6gg",
   },
 ];
 
