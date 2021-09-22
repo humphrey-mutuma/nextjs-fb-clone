@@ -29,7 +29,7 @@ const contacts = [
     profile: "https://links.papareact.com/zvy",
   },
   {
-    name: "Queen ",
+    name: "Queen II",
     src: "https://links.papareact.com/6gg",
     profile: "https://links.papareact.com/6gg",
   },

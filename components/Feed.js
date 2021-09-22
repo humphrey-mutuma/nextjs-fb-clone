@@ -14,8 +14,7 @@ export default function Feed({ posts }) {
       >
         <Stories />
         <InputBox />
-        <Posts />
-
+        <Posts posts={posts} />
       </div>
     </div>
   );
