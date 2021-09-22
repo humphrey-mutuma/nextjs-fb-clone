@@ -1,10 +1,8 @@
-import InputBox from './InputBox';
-import Posts from './Posts';
-import Stories from './Stories';
-// import InputBox from './InputBox';
-// import Posts from './Posts';
+import InputBox from "./InputBox";
+import Posts from "./Posts";
+import Stories from "./Stories";
 
-export default  function Feed({ posts }) {
+export default function Feed({ posts }) {
   return (
     <div
       className="flex-grow h-screen pb-44 pt-6 mr-4 
@@ -14,13 +12,11 @@ export default  function Feed({ posts }) {
         className="mx-auto max-w-md md:max-w-lg 
             lg:max-w-2xl"
       >
-        {/* Stories */}
         <Stories />
         <InputBox />
         <Posts />
-        {/* <Posts posts={posts} /> */}
+
       </div>
     </div>
   );
 }
-
