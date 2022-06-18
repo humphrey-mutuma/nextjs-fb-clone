@@ -16,7 +16,14 @@ function Sidebar() {
   const [session, loading] = useSession();
   return (
     <div className="p-2 mt-5 max-w-[600px] xl:min-w-[300px]">
-      <SidebarRow src={session.user.image} title={session.user.name} />
+      <SidebarRow
+        src={
+          session
+            ? session?.user?.image
+            : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png"
+        }
+        title={session ? session.user.name : "User"}
+      />
       <SidebarRow Icon={UsersIcon} title="Friends" />
       <SidebarRow Icon={UserGroupIcon} title="Groups" />
       <SidebarRow Icon={ShoppingBagIcon} title="Marketplace" />

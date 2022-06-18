@@ -56,14 +56,18 @@ function Header() {
         <Image
           onClick={signOut}
           className="rounded-full cursor-pointer"
-          src={session.user.image}
+          src={
+            session
+              ? session?.user?.image
+              : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png"
+          }
           width="40"
           height="40"
           layout="fixed"
           alt=""
         />
         <p className="whitespace-nowrap font-semibold pr-3">
-          {session.user.name}
+          {session ? session?.user?.name : "User"}
         </p>
         <ViewGridIcon className="icon" />
         <ChatIcon className="icon" />
